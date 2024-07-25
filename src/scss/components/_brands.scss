@@ -1,0 +1,47 @@
+.brands {
+  padding-top: rem(150);
+
+  &__body {
+    margin-left: auto;
+    margin-right: auto;
+    width: rem(1090);
+    height: rem(105);
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    li {
+      width: calc(100%);
+
+      &:not(:last-of-type) {
+        margin-right: rem(105);
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 76%;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: rem(105);
+    }
+  }
+
+}

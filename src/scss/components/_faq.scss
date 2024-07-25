@@ -1,0 +1,123 @@
+.faq {
+  padding-top: rem(200);
+
+  &__block {
+
+    &:not(:first-of-type) {
+      margin-top: rem(150);
+    }
+
+    > :last-child div:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__title {
+    width: fit-content;
+    margin: 0 auto rem(50);
+
+    &-line {
+      padding-right: rem(5);
+
+      > * {
+        transition: color var(--hover-transition);
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__list {
+    max-height: rem(577);
+    width: rem(585);
+    flex-shrink: 0;
+
+    > :not(:first-child) {
+      margin-top: rem(20);
+    }
+  }
+
+  &__line {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid var(--clay);
+    padding-bottom: rem(20);
+    transition: height var(--hover-transition);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    > :not(:first-child) {
+      margin-top: rem(13);
+    }
+
+    &.active {
+      h4 {
+        color: var(--clay);
+      }
+    }
+  }
+
+  &__article {
+    letter-spacing: 0.25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 99%;
+  }
+
+  &__icon {
+    position: absolute;
+    right: rem(10);
+    top: rem(6);
+    height: rem(20);
+    width: rem(10);
+    transition: all var(--hover-transition);
+
+    &.active {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__text {
+    transition: max-height var(--hover-transition);
+    max-height: rem(0);
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: relative;
+    max-width: rem(555);
+    width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 122%;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: rem(40);
+    }
+  }
+}

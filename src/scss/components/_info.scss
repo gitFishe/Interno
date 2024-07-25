@@ -1,0 +1,118 @@
+.info {
+  padding-top: rem(200);
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__block {
+    height: fit-content;
+    width: rem(500);
+    padding: rem(55) rem(84);
+    border-radius: rem(70);
+    background-color: var(--bone);
+
+    > * {
+      text-align: left;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+    }
+
+    > :not(:first-child) {
+      margin-top: rem(20);
+    }
+
+    span {
+      width: fit-content;
+      max-width: rem(130);
+      padding-right: rem(15);
+      color: var(--grey);
+      font-family: DM Serif Display;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
+    }
+
+    p {
+      width: rem(184);
+      color: var(--grey);
+      font-family: Jost;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
+    }
+  }
+
+  &__text {
+    max-width: rem(658);
+
+    > :not(:first-child) {
+      margin-top: rem(10);
+    }
+  }
+
+  &__photo {
+    position: relative;
+    cursor: pointer;
+    transition: scale var(--hover-transition);
+
+    > img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -45%);
+      transform-origin: center;
+      width: rem(132);
+      height: rem(132);
+      transition: var(--hover-transition);
+    }
+
+    &:hover {
+      > img {
+        width: rem(150);
+        height: rem(150);
+      }
+    }
+
+    .fullscreen {
+      position: absolute;
+      width: 90vw;
+      height: 90vh;
+    }
+  }
+
+  &__img {
+    margin-top: rem(100);
+    position: relative;
+    max-width: rem(1201);
+    width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 66.7%;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: rem(70);
+    }
+  }
+
+}

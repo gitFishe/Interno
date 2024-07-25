@@ -1,0 +1,61 @@
+.personal {
+  padding-top: rem(200);
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -11px -50px;
+  }
+
+  &__card {
+    position: relative;
+    margin: 0 11px 50px;
+    width: calc(100% / 4 - 22px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > :not(:last-child) {
+      margin-bottom: rem(17);
+    }
+
+    > * {
+      text-align: center;
+    }
+  }
+
+  &__links {
+    width: fit-content;
+
+    > :not(:last-child) {
+      margin-right: rem(20);
+    }
+
+    a {
+      height: rem(17);
+    }
+  }
+
+  &__img {
+    position: relative;
+    max-width: rem(283);
+    width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 153%;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: rem(30);
+    }
+  }
+}

@@ -1,0 +1,74 @@
+// базовые подключения
+@import "settings";
+@import "vars";
+@import "mixins";
+@import "fonts";
+
+// подключения компонентов страницы
+
+@import "./components/header";
+
+@import "./components/home";
+
+@import "./components/manufacture";
+
+@import "./components/create";
+
+@import "./components/thoughts";
+
+@import "./components/brands";
+
+@import "./components/projects";
+
+@import "./components/stats";
+
+@import "./components/news";
+
+@import "./components/join";
+
+@import "./components/title";
+
+@import "./components/quote";
+
+@import "./components/we-do";
+
+@import "./components/staff";
+
+@import "./components/feedback";
+
+@import "./components/work";
+
+@import "./components/set";
+
+@import "./components/video";
+
+@import "./components/plans";
+
+@import "./components/examples";
+
+@import "./components/info";
+
+@import "./components/post";
+
+@import "./components/articles";
+
+@import "./components/personal";
+
+@import "./components/professional";
+
+@import "./components/faq";
+
+@import "./components/error";
+
+@import "./components/licenses";
+
+@import "./components/interaction";
+
+@import "./components/footer";
+
+
+// маленькие компоненты
+
+//@import "./components/marquee";
+
+

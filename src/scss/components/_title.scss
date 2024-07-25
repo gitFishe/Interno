@@ -1,0 +1,28 @@
+.title {
+  height: rem(356);
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__name {
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    border-radius: rem(37) rem(37) 0px 0px;
+    background-color: var(--white);
+    padding: rem(41) rem(152);
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+}

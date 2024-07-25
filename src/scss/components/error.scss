@@ -1,0 +1,45 @@
+.error {
+  height: calc(100vh - rem(139.5));
+  position: relative;
+
+  &__container {
+    height: 100%;
+  }
+
+  &__body {
+    width: rem(529);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    > :not(:first-child ) {
+
+    }
+
+    span {
+      font-family: DM Serif Display;
+      color: var(--clay);
+      font-size: rem(250);
+      line-height: 100%; /* 312.5px */
+    }
+  }
+
+  &__btn {
+    margin-top: rem(23);
+  }
+
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48vw;;
+    height: 100%;
+
+    & > * {
+      border-bottom-left-radius: rem(353);
+    }
+  }
+}

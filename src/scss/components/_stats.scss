@@ -1,0 +1,38 @@
+.stats {
+  background-color: var(--bone);
+  margin-top: rem(150);
+
+  &__body {
+    display: flex;
+    padding: rem(151) 0;
+    list-style: none;
+
+    > :not(:last-child) {
+      border-right: 1px solid var(--clay);
+    }
+
+    > :first-child, > :last-child {
+      width: 26%;
+    }
+
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24.5%;
+
+    span {
+      color: var(--clay);
+      font-family: DM Serif Display;
+      font-size: rem(85);
+      line-height: 125%;
+      letter-spacing: 1.7px;
+    }
+
+    div {
+      margin-top: rem(16);
+    }
+  }
+}

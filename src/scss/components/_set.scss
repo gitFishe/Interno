@@ -1,0 +1,25 @@
+.set {
+  padding-top: rem(200);
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: rem(478);
+    padding-right: rem(20);
+  }
+
+  &__text {
+    width: rem(655);
+
+    > :first-child {
+      margin-bottom: rem(35);
+    }
+
+    > :not(:first-child) {
+      margin-top: rem(28);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+
+<div class="site-container">
+  @include('partials/header.html')
+  <main class="main">
+    <section class="title">
+      <div class="container title__container">
+        <div class="title__bg"><img src="img/title-professional.png" alt=""></div>
+        <div class="title__name">
+          <div class="title-1"><h1>Professional Single</h1></div>
+          <div class="description description-large"><p>Home / Team Single</p></div>
+        </div>
+      </div>
+    </section>
+    @include('partials/professional.html')
+    @include('partials/staff.html')
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback__body">
+          <div class="title-2"><h2>Creative project? Let's have a productive talk.</h2></div>
+          <div class="feedback__block">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+          </div>
+          <textarea type="text" placeholder="Hello I am Intrested in.." rows="7"></textarea>
+          <button class="btn btn-hover">Send Now <img src="img/btn-arrow-clay.svg" alt=""></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  @include('partials/scripts.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</div>
+</body>
+
+</html>

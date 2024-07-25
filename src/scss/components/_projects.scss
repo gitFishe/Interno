@@ -1,0 +1,110 @@
+.projects {
+  padding-top: rem(150);
+
+  &__start {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(737);
+
+    > * {
+      text-align: center;
+    }
+
+    > :last-child {
+      margin-top: rem(12);
+    }
+  }
+
+
+  &__body {
+    flex-wrap: wrap;
+    display: flex;
+    margin: rem(93) -52px -54px;
+  }
+
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  &__card {
+    position: relative;
+    margin: 0 52px 54px;
+    width: calc(100% / 2 - 104px);
+
+    &:nth-of-type(4n-3) {
+      img {
+        border-top-right-radius: rem(80);
+      }
+    }
+
+    &:nth-of-type(4n-2) {
+      img {
+        border-top-left-radius: rem(80);
+      }
+    }
+
+    &:nth-of-type(4n-1) {
+      img {
+        border-bottom-right-radius: rem(80);
+      }
+    }
+
+    &:nth-of-type(4n) {
+      img {
+        border-bottom-left-radius: rem(80);
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    max-width: rem(548);
+    width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 95.8%;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: rem(28);
+
+  }
+
+  &__icon {
+    width: rem(70);
+    height: rem(70);
+
+    img {
+      border-radius: 0 !important;
+    }
+  }
+
+  &__name {
+    span {
+      color: var(--grey);
+      font-size: rem(20);
+      line-height: 130%;
+    }
+  }
+}

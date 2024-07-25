@@ -1,0 +1,136 @@
+.feedback {
+  padding-top: rem(213);
+
+  &__title {
+    width: rem(683);
+    margin: 0 auto;
+
+    > * {
+      text-align: center;
+    }
+  }
+
+  &__info {
+    width: rem(795);
+    margin-top: rem(80);
+  }
+
+  &__body {
+    width: rem(796);
+    margin: 0 auto;
+
+    > :first-child {
+      text-align: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(80);
+    width: 100%;
+  }
+
+  textarea {
+    margin-top: rem(57);
+    border-bottom: 1px solid var(--black);
+    width: 100%;
+    resize: none;
+
+    ::placeholder {
+      color: var(--grey);
+      font-family: Jost;
+      font-size: rem(22);
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.22px;
+    }
+  }
+
+  &__contacts {
+    padding: rem(76) rem(32);
+    border-radius: rem(50);
+    background-color: var(--bone);
+
+    > :not(:first-child) {
+      margin-top: rem(47);
+    }
+  }
+
+  &__links {
+    list-style: none;
+
+    > :not(:first-child) {
+      margin-top: rem(30);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      margin-left: rem(15);
+    }
+  }
+
+  &__icon {
+    width: rem(52);
+    height: rem(52);
+    border-radius: 50%;
+    background-color: var(--white);
+  }
+
+  &__block {
+    margin-top: rem(77);
+    display: flex;
+    justify-content: space-between;
+
+    &-plus {
+      margin-top: 0;
+
+      &:last-of-type {
+        margin-top: rem(50);
+      }
+    }
+
+    input {
+      height: rem(45);
+      border-bottom: 1px solid var(--black);
+      width: 48%;
+
+      ::placeholder {
+        color: var(--grey);
+        font-family: Jost;
+        font-size: rem(22);
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.22px;
+      }
+    }
+
+  }
+
+  button {
+    margin: rem(77) auto 0;
+  }
+
+  textarea:focus, input:focus {
+    outline: none;
+  }
+
+
+  &__column {
+    &:first-of-type {
+      width: rem(349);
+    }
+
+    &:last-of-type {
+      width: rem(797);
+
+      button {
+        margin: rem(58) 0 0 auto;
+      }
+    }
+  }
+}

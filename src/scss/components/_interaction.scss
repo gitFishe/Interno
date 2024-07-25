@@ -1,0 +1,49 @@
+.interaction {
+  padding-top: rem(200);
+
+  &__quotes {
+    display: flex;
+
+    &-changelog {
+      padding: rem(128) rem(343);
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      > :not(:first-child) {
+        margin-left: rem(11);
+      }
+    }
+
+    &-password {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: rem(154) rem(240);
+
+      p {
+        margin-top: rem(15);
+      }
+
+      input {
+        margin-top: rem(40);
+        height: rem(45);
+        border-bottom: 1.5px solid var(--black);
+        width: rem(482);
+
+        ::placeholder {
+          color: var(--grey);
+          font-family: Jost;
+          font-size: rem(22);
+          font-weight: 500;
+          line-height: 150%;
+          letter-spacing: 0.22px;
+        }
+      }
+
+      button {
+        margin-top: rem(41);
+      }
+    }
+  }
+}

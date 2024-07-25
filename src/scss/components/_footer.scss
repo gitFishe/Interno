@@ -1,0 +1,77 @@
+.footer {
+  position: relative;
+  margin-top: rem(200);
+  padding-bottom: rem(253);
+
+  ul {
+    list-style: none;
+
+    > :not(:last-child) {
+      margin-bottom: rem(30);
+    }
+
+    li {
+      font-size: rem(20);
+      line-height: 150%;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+
+    > :first-child {
+      width: rem(393);
+    }
+
+    > :last-child {
+      width: rem(258);
+    }
+  }
+
+  &__description {
+    font-size: rem(22);
+    margin-top: rem(25);
+  }
+
+  &__icons {
+    margin-top: rem(31);
+  }
+
+  &__img {
+    position: relative;
+    max-width: rem(177);
+    width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 28%;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    border-top: 1px solid var(--bone);
+    background-color: var(--white);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: rem(40) 0 rem(46);
+    position: absolute;
+
+    > * {
+      font-size: rem(22);
+    }
+  }
+}

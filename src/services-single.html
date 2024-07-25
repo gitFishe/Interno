@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+
+<div class="site-container">
+  @include('partials/header.html')
+  <main class="main">
+    <section class="title">
+      <div class="container title__container">
+        <div class="title__bg"><img src="img/title-services-single.png" alt=""></div>
+        <div class="title__name">
+          <div class="title-1"><h1>Services Single</h1></div>
+          <div class="description description-large"><p>Home / Services Single</p></div>
+        </div>
+      </div>
+    </section>
+    @include('partials/set.html')
+    @include('partials/brands.html')
+    @include('partials/video.html')
+    @include('partials/stats.html')
+  </main>
+  @include('partials/footer.html')
+  @include('partials/scripts.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</div>
+</body>
+
+</html>

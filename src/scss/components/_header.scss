@@ -1,0 +1,73 @@
+.header {
+  padding: rem(45) 0;
+
+  &__body {
+    display: flex;
+    align-items: center;
+
+    > :last-child {
+      margin-left: auto;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    position: relative;
+    max-width: rem(177);
+    width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 28%;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    font-size: rem(20);
+
+    > :not(:first-child) {
+      margin-left: rem(50);
+    }
+
+    svg {
+      width: rem(21);
+      height: rem(21);
+    }
+
+    a {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: rem(-5);
+        left: 0;
+        height: 2px;
+        background-color: var(--black);
+        width: 100%;
+        transition: var(--hover-transition);
+        transform: scaleX(0);
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
